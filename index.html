@@ -16,10 +16,10 @@
             top: 0;
             width: 100%;
             background: rgba(0, 0, 0, 0.8);
-            padding: 15px 20px 15px 100px; /* Added padding to the left to make room for profile pic */
+            padding: 15px 20px;
             text-align: center;
             z-index: 10;
-            box-sizing: border-box; /* Ensure padding is included in element's total width and height */
+            box-sizing: border-box;
         }
         .navbar a {
             color: #e0e0e0;
@@ -71,16 +71,16 @@
             width: 100%;
             max-width: 500px;
             border-radius: 10px;
-            z-index: 2; /* Ensure the video is above the background video */
-            position: relative; /* Ensure it stays in the correct layer */
+            z-index: 2;
+            position: relative;
         }
-        .profile-pic-small {
-            position: fixed;
-            top: 15px;
-            left: 20px;
+        .profile-pic-large {
+            position: absolute;
+            top: 80px; /* Adjust to move the profile picture below the navigation bar */
+            left: 50px;
             border-radius: 50%;
-            width: 100px; /* Adjusted width */
-            height: 100px; /* Adjusted height */
+            width: 150px; /* Adjusted width */
+            height: 150px; /* Adjusted height */
             object-fit: cover;
             border: 3px solid #ffffff;
             z-index: 11;
@@ -242,7 +242,7 @@
     </div>
 
     <!-- Profile Picture -->
-    <img src="IMG_3897.jpg" alt="Segun Oluwadele" class="profile-pic-small">
+    <img src="IMG_3897.jpg" alt="Segun Oluwadele" class="profile-pic-large">
 
     <!-- Hero Section -->
     <section class="hero">
