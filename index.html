@@ -6,25 +6,31 @@
     <title>Segun Oluwadele - DevOps/Cloud Engineer</title>
     <style>
         body {
-            background-color: #121212;
-            background-image: url('pexels-sliceisop-2873671.jpg'); /* Use the uploaded image */
-            background-size: cover; /* Ensure the background covers the entire page */
-            background-position: center; /* Center the background image */
-            color: #e0e0e0;
+            margin: 0;
             font-family: Arial, sans-serif;
+            color: #e0e0e0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            overflow: hidden;
+        }
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
         .container {
             max-width: 800px;
             padding: 20px;
-            border: 1px solid #333;
-            border-radius: 10px;
             background: rgba(30, 30, 30, 0.8); /* Semi-transparent background */
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
         }
         h1 {
             text-align: center;
@@ -52,6 +58,10 @@
     </style>
 </head>
 <body>
+    <video autoplay muted loop class="video-bg">
+        <source src="1851190-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <div class="container">
         <h1>About Me</h1>
         <img src="IMG_3897.jpg" alt="Segun Oluwadele" class="profile-pic">
