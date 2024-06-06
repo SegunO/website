@@ -54,16 +54,27 @@
             max-width: 800px;
             margin: auto;
             background: rgba(0, 0, 0, 0.5);
-            padding: 40px 20px; /* Increase padding for better visibility */
+            padding: 40px 20px;
             border-radius: 10px;
         }
         .hero-content h1 {
             color: #80cbc4;
-            font-size: 3rem; /* Increase font size */
-            margin: 0; /* Remove margin */
+            font-size: 3rem;
+            margin: 0;
         }
         .hero-content p {
             font-size: 1.2rem;
+        }
+        .profile-pic-small {
+            position: fixed;
+            top: 15px;
+            left: 20px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 3px solid #ffffff;
+            z-index: 11;
         }
         .section {
             padding: 60px 20px;
@@ -76,14 +87,6 @@
             background: #f4f4f4;
             color: #121212;
         }
-        .profile-pic {
-            display: block;
-            margin: 0 auto 20px auto;
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-        }
         .footer {
             background: #1e1e1e;
             color: #e0e0e0;
@@ -95,10 +98,13 @@
 <body>
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="#about">About</a>
+        <a href="about.html">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </div>
+
+    <!-- Profile Picture -->
+    <img src="IMG_3897.jpg" alt="Segun Oluwadele" class="profile-pic-small">
 
     <!-- Hero Section -->
     <section class="hero">
@@ -110,13 +116,6 @@
             <h1>Segun Oluwadele</h1>
             <p>DevOps/Cloud Engineer</p>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section bg-dark">
-        <img src="IMG_3897.jpg" alt="Segun Oluwadele" class="profile-pic">
-        <h2>About Me</h2>
-        <p>Hello! My name is Segun Oluwadele, and I am a seasoned DevOps/Cloud Engineer with over a decade of experience specializing in AWS and Azure. I thrive in dynamic environments where I can leverage my expertise to streamline operations, enhance security, and optimize performance.</p>
     </section>
 
     <!-- Projects Section -->
