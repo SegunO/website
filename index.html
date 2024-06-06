@@ -178,6 +178,35 @@
             background: #80cbc4;
             color: #000;
         }
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 20px;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .tech-buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .tech-button {
+                width: 80%;
+                margin: 10px 0;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.5rem;
+            }
+            .hero-content p {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
