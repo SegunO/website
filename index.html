@@ -16,9 +16,10 @@
             top: 0;
             width: 100%;
             background: rgba(0, 0, 0, 0.8);
-            padding: 15px 20px;
+            padding: 15px 20px 15px 100px; /* Added padding to the left to make room for profile pic */
             text-align: center;
             z-index: 10;
+            box-sizing: border-box; /* Ensure padding is included in element's total width and height */
         }
         .navbar a {
             color: #e0e0e0;
@@ -70,8 +71,8 @@
             top: 15px;
             left: 20px;
             border-radius: 50%;
-            width: 100px;
-            height: 100px;
+            width: 60px; /* Adjusted width */
+            height: 60px; /* Adjusted height */
             object-fit: cover;
             border: 3px solid #ffffff;
             z-index: 11;
