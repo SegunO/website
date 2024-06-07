@@ -12,6 +12,9 @@
             background: url('Monitor-Background.jpg') no-repeat center center fixed;
             background-size: cover;
             overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Full height to allow the footer to stick at the bottom */
         }
         .navbar {
             position: fixed;
@@ -33,12 +36,12 @@
         }
         .about-container {
             position: absolute;
-            top: 25%;
+            top: 30%;
             left: 50%;
-            transform: translate(-50%, -25%);
-            width: 70%;
-            max-width: 800px;
-            max-height: 60%; /* Limit the height of the box */
+            transform: translate(-50%, -30%);
+            width: 60%;
+            max-width: 700px;
+            max-height: 50%; /* Limit the height of the box */
             background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 10px;
@@ -57,11 +60,19 @@
             margin-bottom: 10px;
             text-align: justify;
         }
+        .content-wrapper {
+            flex: 1; /* Take up the remaining space */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .footer {
             background: #1e1e1e;
             color: #e0e0e0;
             padding: 20px;
             text-align: center;
+            position: relative;
+            width: 100%;
         }
         /* Popup Form */
         .modal {
@@ -136,17 +147,20 @@
         <a href="#" id="contactBtn">Contact</a>
     </div>
 
-    <!-- About Content Section -->
-    <div class="about-container">
-        <h2>About Me</h2>
-        <p>I am Segun Oluwadele, a dedicated DevOps professional with over 13 years of experience in the IT industry and a focused expertise in cloud automation and quality engineering for the past 5 years. My approach is deeply rooted in principles of precision, resilience, and continuous improvement, inspired by stoic philosophy’s emphasis on mastery and excellence.</p>
-        <p>My career has been shaped by a commitment to leveraging cutting-edge technologies to build and optimize robust, scalable cloud environments, predominantly on AWS and Azure. I specialize in orchestrating the seamless migration of applications to cloud platforms, architecting efficient CI/CD pipelines, and ensuring that every deployment is as smooth and reliable as possible.</p>
-        <p>Containerization and orchestration with Docker and Kubernetes form the backbone of my technical strategy, allowing me to transform monolithic applications into agile, microservices-based architectures. This transition enhances scalability and operational efficiency, aligning with the stoic ideal of adaptability and strength in varied circumstances.</p>
-        <p>In the realm of infrastructure automation, I employ tools such as Terraform, Ansible, and Puppet to create consistent, automated environments. My proficiency in scripting languages like Groovy, Shell, JSON, and YAML enables the development of sophisticated automation scripts, facilitating seamless integration and deployment processes.</p>
-        <p>Version control systems are integral to my workflow, with extensive use of Git, GitHub, and Bitbucket to maintain code integrity. I ensure code quality and security through the integration of tools like SonarQube and Snyk into CI/CD pipelines, reflecting a rigorous approach to maintaining high standards throughout the development lifecycle.</p>
-        <p>I am adept at managing Kubernetes clusters and implementing comprehensive monitoring and alerting systems, ensuring high availability and performance of applications. Security is a cornerstone of my practice, with a thorough application of best practices in IAM roles, policies, and compliance standards within cloud environments.</p>
-        <p>My professional ethos is grounded in Agile and Scrum methodologies, fostering a disciplined, collaborative environment that drives continuous enhancement and effective software delivery. Each project is a pursuit of excellence, embodying the stoic principles of resilience, clarity, and purpose.</p>
-        <p>In summary, my journey is one of methodical innovation and unwavering commitment to elevating the standards of cloud and DevOps practices, with a focus on delivering robust and scalable solutions.</p>
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- About Content Section -->
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>I am Segun Oluwadele, a dedicated DevOps professional with over 13 years of experience in the IT industry and a focused expertise in cloud automation and quality engineering for the past 5 years. My approach is deeply rooted in principles of precision, resilience, and continuous improvement, inspired by stoic philosophy’s emphasis on mastery and excellence.</p>
+            <p>My career has been shaped by a commitment to leveraging cutting-edge technologies to build and optimize robust, scalable cloud environments, predominantly on AWS and Azure. I specialize in orchestrating the seamless migration of applications to cloud platforms, architecting efficient CI/CD pipelines, and ensuring that every deployment is as smooth and reliable as possible.</p>
+            <p>Containerization and orchestration with Docker and Kubernetes form the backbone of my technical strategy, allowing me to transform monolithic applications into agile, microservices-based architectures. This transition enhances scalability and operational efficiency, aligning with the stoic ideal of adaptability and strength in varied circumstances.</p>
+            <p>In the realm of infrastructure automation, I employ tools such as Terraform, Ansible, and Puppet to create consistent, automated environments. My proficiency in scripting languages like Groovy, Shell, JSON, and YAML enables the development of sophisticated automation scripts, facilitating seamless integration and deployment processes.</p>
+            <p>Version control systems are integral to my workflow, with extensive use of Git, GitHub, and Bitbucket to maintain code integrity. I ensure code quality and security through the integration of tools like SonarQube and Snyk into CI/CD pipelines, reflecting a rigorous approach to maintaining high standards throughout the development lifecycle.</p>
+            <p>I am adept at managing Kubernetes clusters and implementing comprehensive monitoring and alerting systems, ensuring high availability and performance of applications. Security is a cornerstone of my practice, with a thorough application of best practices in IAM roles, policies, and compliance standards within cloud environments.</p>
+            <p>My professional ethos is grounded in Agile and Scrum methodologies, fostering a disciplined, collaborative environment that drives continuous enhancement and effective software delivery. Each project is a pursuit of excellence, embodying the stoic principles of resilience, clarity, and purpose.</p>
+            <p>In summary, my journey is one of methodical innovation and unwavering commitment to elevating the standards of cloud and DevOps practices, with a focus on delivering robust and scalable solutions.</p>
+        </div>
     </div>
 
     <!-- Footer -->
