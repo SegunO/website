@@ -9,6 +9,8 @@
             margin: 0;
             font-family: Arial, sans-serif;
             color: #e0e0e0;
+            background: url('Monitor-Background.jpg') no-repeat center center fixed;
+            background-size: cover;
             overflow-x: hidden;
         }
         .navbar {
@@ -29,60 +31,29 @@
         .navbar a:hover {
             color: #80cbc4;
         }
-        .hero {
-            position: relative;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .hero video {
+        .about-content {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 1;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -25%);
+            width: 70%;
             max-width: 800px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.7);
             padding: 40px 20px;
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
-        .hero-content h1 {
+        .about-content h2 {
             color: #80cbc4;
-            font-size: 3rem;
-            margin: 0;
-        }
-        .hero-content p {
-            font-size: 1.2rem;
-        }
-        .section {
-            padding: 60px 20px;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
             text-align: center;
         }
-        .section.bg-dark {
-            background: #1e1e1e;
-        }
-        .section.bg-light {
-            background: #f4f4f4;
-            color: #121212;
-        }
-        .profile-pic {
-            display: block;
-            margin: 0 auto 20px auto;
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
         }
         .footer {
             background: #1e1e1e;
@@ -163,21 +134,8 @@
         <a href="#" id="contactBtn">Contact</a>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <video autoplay muted loop>
-            <source src="1851190-uhd_3840_2160_25fps.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="hero-content">
-            <h1>About Me</h1>
-            <p>Learn more about Segun Oluwadele</p>
-        </div>
-    </section>
-
-    <!-- Detailed About Section -->
-    <section id="about" class="section bg-dark">
-        <img src="IMG_3897.jpg" alt="Segun Oluwadele" class="profile-pic">
+    <!-- About Content Section -->
+    <div class="about-content">
         <h2>About Me</h2>
         <p>I am Segun Oluwadele, a dedicated DevOps professional with over 13 years of experience in the IT industry and a focused expertise in cloud automation and quality engineering for the past 5 years. My approach is deeply rooted in principles of precision, resilience, and continuous improvement, inspired by stoic philosophy’s emphasis on mastery and excellence.</p>
         <p>My career has been shaped by a commitment to leveraging cutting-edge technologies to build and optimize robust, scalable cloud environments, predominantly on AWS and Azure. I specialize in orchestrating the seamless migration of applications to cloud platforms, architecting efficient CI/CD pipelines, and ensuring that every deployment is as smooth and reliable as possible.</p>
@@ -187,7 +145,7 @@
         <p>I am adept at managing Kubernetes clusters and implementing comprehensive monitoring and alerting systems, ensuring high availability and performance of applications. Security is a cornerstone of my practice, with a thorough application of best practices in IAM roles, policies, and compliance standards within cloud environments.</p>
         <p>My professional ethos is grounded in Agile and Scrum methodologies, fostering a disciplined, collaborative environment that drives continuous enhancement and effective software delivery. Each project is a pursuit of excellence, embodying the stoic principles of resilience, clarity, and purpose.</p>
         <p>In summary, my journey is one of methodical innovation and unwavering commitment to elevating the standards of cloud and DevOps practices, with a focus on delivering robust and scalable solutions.</p>
-    </section>
+    </div>
 
     <!-- Footer -->
     <div class="footer">
@@ -248,4 +206,3 @@
     </script>
 </body>
 </html>
-
