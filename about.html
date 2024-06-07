@@ -31,28 +31,30 @@
         .navbar a:hover {
             color: #80cbc4;
         }
-        .about-content {
+        .about-container {
             position: absolute;
             top: 25%;
             left: 50%;
             transform: translate(-50%, -25%);
             width: 70%;
             max-width: 800px;
+            max-height: 60%; /* Limit the height of the box */
             background: rgba(0, 0, 0, 0.7);
-            padding: 40px 20px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            overflow: auto; /* Enable scrolling */
         }
-        .about-content h2 {
+        .about-container h2 {
             color: #80cbc4;
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 20px;
             text-align: center;
         }
-        .about-content p {
-            font-size: 1.1rem;
+        .about-container p {
+            font-size: 1rem;
             line-height: 1.6;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             text-align: justify;
         }
         .footer {
@@ -135,7 +137,7 @@
     </div>
 
     <!-- About Content Section -->
-    <div class="about-content">
+    <div class="about-container">
         <h2>About Me</h2>
         <p>I am Segun Oluwadele, a dedicated DevOps professional with over 13 years of experience in the IT industry and a focused expertise in cloud automation and quality engineering for the past 5 years. My approach is deeply rooted in principles of precision, resilience, and continuous improvement, inspired by stoic philosophy’s emphasis on mastery and excellence.</p>
         <p>My career has been shaped by a commitment to leveraging cutting-edge technologies to build and optimize robust, scalable cloud environments, predominantly on AWS and Azure. I specialize in orchestrating the seamless migration of applications to cloud platforms, architecting efficient CI/CD pipelines, and ensuring that every deployment is as smooth and reliable as possible.</p>
@@ -152,7 +154,7 @@
         <p>&copy; 2024 Segun Oluwadele</p>
     </div>
 
-     <!-- The Modal -->
+    <!-- The Modal -->
     <div id="contactModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
