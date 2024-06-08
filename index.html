@@ -10,7 +10,8 @@
             font-family: Arial, sans-serif;
             color: #e0e0e0;
             overflow-x: hidden;
-            background: url('website-background-2.webp') repeat-y center center; /* Repeat background vertically */
+            background: url('website-background-2.webp') repeat-y center center;
+            /* Repeat background vertically */
             background-size: cover;
         }
         .navbar {
@@ -85,6 +86,18 @@
         .section.bg-light {
             background: rgba(30, 30, 30, 0.0); /* Semi-transparent dark background */
             color: #e0e0e0;
+        }
+        /* Title with cloud background */
+        .cloud-title {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            background: url('blue-cloud.png') no-repeat center;
+            background-size: contain;
+            color: #FDFDFD; /* Ensures text color contrasts with the cloud */
         }
         /* Popup Form */
         .modal {
@@ -243,8 +256,9 @@
 
     <!-- Cloud Tools & Technologies Section -->
     <section id="cloud-tools" class="section bg-light">
-        <h2>Cloud Tools & Technologies</h2>
+        <h2 class="cloud-title">Cloud Tools & Technologies</h2>
         <div class="cloud-tools">
+            <!-- Technology buttons linking to respective GitHub repositories -->
             <a href="https://github.com/tech-with-segun/Docker" class="tech-button">
                 <img src="docker-svgrepo-com.svg" alt="Docker">
                 Docker
@@ -338,6 +352,8 @@
     </div>
 
     <script>
+        // JavaScript for handling modal functionality
+
         // Get the modal
         var modal = document.getElementById("contactModal");
 
