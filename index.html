@@ -10,6 +10,8 @@
             font-family: Arial, sans-serif;
             color: #e0e0e0;
             overflow-x: hidden;
+            background: url('website-background-2.webp') repeat-y center center; /* Repeat background vertically */
+            background-size: cover;
         }
         .navbar {
             position: fixed;
@@ -39,7 +41,6 @@
             text-align: center;
             padding: 20px;
             box-sizing: border-box;
-            background: url('website-background-2.webp') no-repeat center center/cover;
         }
         .hero-content {
             position: relative;
@@ -81,18 +82,9 @@
             padding: 60px 20px;
             text-align: center;
         }
-        .section.bg-dark {
-            background: #1e1e1e;
-        }
         .section.bg-light {
-            background: #f4f4f4;
-            color: #121212;
-        }
-        .footer {
-            background: #1e1e1e;
+            background: rgba(30, 30, 30, 0.7); /* Semi-transparent dark background */
             color: #e0e0e0;
-            padding: 20px;
-            text-align: center;
         }
         /* Popup Form */
         .modal {
@@ -217,6 +209,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            padding: 20px 0;
         }
         .cloud-tools .tech-button {
             width: 120px;
@@ -249,7 +242,7 @@
     </section>
 
     <!-- Cloud Tools & Technologies Section -->
-    <section id="cloud-tools" class="section bg-dark">
+    <section id="cloud-tools" class="section bg-light">
         <h2>Cloud Tools & Technologies</h2>
         <div class="cloud-tools">
             <a href="https://github.com/tech-with-segun/Docker" class="tech-button">
@@ -318,11 +311,6 @@
             </a>
         </div>
     </section>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2024 Segun Oluwadele</p>
-    </div>
 
     <!-- The Modal -->
     <div id="contactModal" class="modal">
