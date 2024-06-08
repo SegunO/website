@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
             /* Repeat background vertically */
             background-size: cover;
         }
+
         .navbar {
             position: fixed;
             top: 0;
@@ -24,15 +26,18 @@
             z-index: 10;
             box-sizing: border-box;
         }
+
         .navbar a {
             color: #e0e0e0;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
+
         .navbar a:hover {
             color: #80cbc4;
         }
+
         .hero {
             position: relative;
             height: 100vh;
@@ -43,6 +48,7 @@
             padding: 20px;
             box-sizing: border-box;
         }
+
         .hero-content {
             position: relative;
             z-index: 1;
@@ -52,14 +58,17 @@
             padding: 40px 20px;
             border-radius: 10px;
         }
+
         .hero-content h1 {
             color: #FDFDFD;
             font-size: 3rem;
             margin: 0;
         }
+
         .hero-content p {
             font-size: 1.2rem;
         }
+
         .hero-content video {
             margin-top: 20px;
             width: 100%;
@@ -68,25 +77,33 @@
             z-index: 2;
             position: relative;
         }
+
         .profile-pic-large {
             position: absolute;
-            top: 80px; /* Adjust to move the profile picture below the navigation bar */
+            top: 80px;
+            /* Adjust to move the profile picture below the navigation bar */
             left: 50px;
             border-radius: 50%;
-            width: 150px; /* Adjusted width */
-            height: 150px; /* Adjusted height */
+            width: 150px;
+            /* Adjusted width */
+            height: 150px;
+            /* Adjusted height */
             object-fit: cover;
             border: 3px solid #ffffff;
             z-index: 11;
         }
+
         .section {
             padding: 60px 20px;
             text-align: center;
         }
+
         .section.bg-light {
-            background: rgba(30, 30, 30, 0.0); /* Semi-transparent dark background */
+            background: rgba(30, 30, 30, 0.0);
+            /* Semi-transparent dark background */
             color: #e0e0e0;
         }
+
         /* Title with cloud background */
         .cloud-title {
             position: relative;
@@ -95,24 +112,39 @@
             margin-bottom: 20px;
             font-size: 2rem;
             font-weight: bold;
+            color: #FDFDFD;
+            /* Ensures text color contrasts with the cloud */
+            z-index: 2;
+        }
+
+        .cloud-title::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
             background: url('blue-cloud.png') no-repeat center;
             background-size: contain;
-            color: #FDFDFD; /* Ensures text color contrasts with the cloud */
+            z-index: -1;
         }
+
         /* Popup Form */
         .modal {
-            display: none; 
-            position: fixed; 
-            z-index: 20; 
+            display: none;
+            position: fixed;
+            z-index: 20;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.4); 
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
             padding-top: 60px;
         }
+
         .modal-content {
             background-color: #1e1e1e;
             margin: 5% auto;
@@ -122,25 +154,30 @@
             max-width: 600px;
             border-radius: 10px;
         }
+
         .close {
             color: #aaa;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
+
         .close:hover,
         .close:focus {
             color: #80cbc4;
             text-decoration: none;
             cursor: pointer;
         }
+
         .form-group {
             margin-bottom: 15px;
         }
+
         .form-group label {
             display: block;
             margin-bottom: 5px;
         }
+
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -150,6 +187,7 @@
             background: #333;
             color: #fff;
         }
+
         .form-group button {
             background: #80cbc4;
             color: #000;
@@ -158,12 +196,15 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         .form-group button:hover {
             background: #66b3a6;
         }
+
         .tech-buttons {
             margin-top: 20px;
         }
+
         .tech-button {
             display: inline-block;
             margin: 10px;
@@ -176,47 +217,58 @@
             text-align: center;
             width: 150px;
         }
+
         .tech-button img {
             max-width: 50px;
             margin-bottom: 10px;
         }
+
         .tech-button:hover {
             background: #80cbc4;
             color: #000;
         }
+
         /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
             .hero-content {
                 padding: 20px;
             }
+
             .hero-content h1 {
                 font-size: 2rem;
             }
+
             .hero-content p {
                 font-size: 1rem;
             }
+
             .hero-content video {
                 width: 100%;
                 max-width: 300px;
             }
+
             .tech-buttons {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
+
             .tech-button {
                 width: 80%;
                 margin: 10px 0;
             }
         }
+
         @media (max-width: 480px) {
             .hero-content h1 {
                 font-size: 1.5rem;
             }
+
             .hero-content p {
                 font-size: 0.9rem;
             }
         }
+
         /* Styles for Cloud Tools & Technologies Section */
         .cloud-tools {
             display: flex;
@@ -224,12 +276,14 @@
             justify-content: center;
             padding: 20px 0;
         }
+
         .cloud-tools .tech-button {
             width: 120px;
             margin: 10px;
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <div class="navbar">
@@ -381,4 +435,5 @@
         }
     </script>
 </body>
+
 </html>
